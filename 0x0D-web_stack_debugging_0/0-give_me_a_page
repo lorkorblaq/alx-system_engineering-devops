@@ -1,2 +1,2 @@
-#!/usr/bin/env bash
+sudo sh -c 'echo "yeso " -a > /var/www/html/index.html'#!/usr/bin/env bash
 sudo service apache2 start
