@@ -16,3 +16,4 @@ elif [ "$#" == 2 ]
 then
   dns_config "$1" "$2"
 fi
+sudo nano /etc/nginx/sites-available/default
