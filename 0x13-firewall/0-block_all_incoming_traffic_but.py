@@ -16,6 +16,7 @@ def ufw():
     sudo("ufw allow 22/tcp")
     sudo("ufw allow 443/tcp")
     sudo("ufw allow 80/tcp")
+    sudo("ufw allow 3306/tcp") #mysql to allow replication
     sudo("ufw enable")
     sudo("ufw reload")
     # Display ufw status
