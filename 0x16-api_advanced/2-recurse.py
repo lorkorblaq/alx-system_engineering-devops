@@ -5,12 +5,12 @@ Using reddit's API
 import requests
 after = None
 
-
+subreddit = 'programming'
 def recurse(subreddit, hot_list=[]):
     """returning top ten post titles recursively"""
     global after
     user_agent = {'User-Agent': 'api_advanced-project'}
-    url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
+    url = f"https://www.reddit.com/r/{subreddit}/hot/.json".format(subreddit)
     parameters = {'after': after}
     results = requests.get(url, params=parameters, headers=user_agent,
                            allow_redirects=False)
